@@ -90,8 +90,12 @@ const styles=StyleSheet.create({
         marginHorizontal: 16,
         flexDirection: 'row',
         justifyContent: 'space-around',
-        borderWidth: 5,
-        backgroundColor: 'grey'
+        borderWidth: 2,
+        backgroundColor: '#e3e3e3'
+    },
+    temp: {
+        color: "#e3e3e3",
+        fontSize: 20
     }
 })
 export default UpcomingWeather
