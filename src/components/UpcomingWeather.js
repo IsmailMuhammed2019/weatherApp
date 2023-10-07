@@ -54,6 +54,14 @@ const Item = (props) => {
 }
 
 const UpcomingWeather = () => {
+    const renderItem = ({item}) => {
+        <Item 
+            condition={item.weather[0].main}
+            dt_txt={item.dt_txt}
+            min={item.main.temp_min}
+            max={item.main.tem_max}
+        />
+    }
     return(
         <SafeAreaView style={styles.wrapper}>
             <View style={styles.container}>
