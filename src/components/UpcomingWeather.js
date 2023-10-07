@@ -3,7 +3,7 @@ import { View, Text, StyleSheet, SafeAreaView} from "react-native"
 
 const UpcomingWeather = () => {
     return(
-        <SafeAreaView>
+        <SafeAreaView style={styles.wrapper}>
             <View style={styles.container}>
                 <Text>The current upcoming weather</Text>
             </View>
@@ -12,6 +12,9 @@ const UpcomingWeather = () => {
 }
 
 const styles=StyleSheet.create({
+    wrapper: {
+        flex: 1,
+    },
     container: {
         flex: 1,
     }
