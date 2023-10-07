@@ -8,7 +8,10 @@ const App = () => {
 
         <Text style={styles.temp}>6</Text>
         <Text style={styles.feels}>Feels like 5</Text>
-        <Text style={styles.highLow}>High: 8 Low: 6</Text>
+        <View style={styles.higLowWrapper}>
+          <Text style={styles.highLow}>High: 8 Low: 6</Text>
+          <Text style={styles.highLow}>Low: 6</Text>
+        </View>
       </View>
     </SafeAreaView>
   )
