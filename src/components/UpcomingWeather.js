@@ -1,5 +1,6 @@
 import React from "react";
 import { View, Text, StyleSheet, SafeAreaView, FlatList} from "react-native"
+import { Feather } from '@expo/vector-icons';
 
 const DATA = [
     {
@@ -44,6 +45,7 @@ const Item = (props) => {
     const {dt_txt, min, max, condition} = props
     return (
         <View>
+            <Feather size={50} color="yellow" name="sun" />
             <Text>{dt_txt}</Text>
             <Text>{min}</Text>
             <Text>{max}</Text>
