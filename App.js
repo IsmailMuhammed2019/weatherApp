@@ -13,6 +13,10 @@ const App = () => {
           <Text style={styles.highLow}>Low: 6</Text>
         </View>
       </View>
+      <View style={styles.bodyWrapper}>
+        <Text>Its sunny</Text>
+        <Text>It's perfect t-shirt weather</Text>
+      </View>
     </SafeAreaView>
   )
 }
