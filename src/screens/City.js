@@ -1,5 +1,5 @@
 import React from 'react'
-import {Text, SafeAreaView, StyleSheet, ImageBackground } from 'react-native'
+import {Text, SafeAreaView, StyleSheet, ImageBackground, StatusBar } from 'react-native'
 
 const City = () => {
     const {container, imageStyle} = styles
@@ -14,7 +14,8 @@ const City = () => {
 
 const styles = StyleSheet.create ({
     container : {
-        flex: 1
+        flex: 1,
+        marginTop: StatusBar.currentHeight || 0
     },
     imageStyle: {
         flex: 1
