@@ -30,7 +30,8 @@ const styles = StyleSheet.create ({
   container: {
 
     flex: '1',
-    alignItems: "center"
+    alignItems: "center",
+    justifyContent: "center"
   },
   temp: {
     color: 'black',
@@ -49,13 +50,16 @@ const styles = StyleSheet.create ({
   },
   bodyWrapper: {
     justifyContent: 'flex-end',
-    alignItems: 'flex-start'
+    alignItems: 'flex-start',
+    marginBottom: 40,
+    paddingLeft: 25
   },
   description: {
-    fontSize: 40
+    fontSize: 40,
   },
   message: {
-fontSize: 30
+    fontSize: 30
+
   }
 })
 export default App;
