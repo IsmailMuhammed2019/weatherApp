@@ -47,8 +47,8 @@ const Item = (props) => {
         <View style={styles.items}>
             <Feather name={"sun"} size={50} color={"black"} />
             <Text>{dt_txt}</Text>
-            <Text>{min}</Text>
-            <Text>{max}</Text>
+            <Text style={styles.temp}>{min}</Text>
+            <Text style={styles.temp}>{max}</Text>
         </View>
     )
 }
