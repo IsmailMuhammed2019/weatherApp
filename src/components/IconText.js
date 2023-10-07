@@ -6,14 +6,14 @@ const IconText = (props) => {
     const { iconName, iconColor, bodyText, bodyTextStyles } = props
     const {textTheme} = styles
   return (
-    <View style={population}>
+    <View>
         <Feather name={iconName} size={50} color={iconColor} />
         <Text style={[textTheme, bodyTextStyles]}>{bodyText}</Text>
     </View>
   )
 }
 
-const styles = ({
+const styles = StyleSheet.create ({
   textTheme: {
     fontWeight: 'bold'
   }
