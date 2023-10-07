@@ -56,8 +56,6 @@ const styles = StyleSheet.create ({
   },
   message: {
 fontSize: 30
-  },
-sun: {
-}
+  }
 })
 export default App;
