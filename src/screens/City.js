@@ -8,15 +8,14 @@ const City = () => {
             <ImageBackground source={require('../../assets/city.jpg')} style={imageStyle}>
                 <Text style={[cityName, cityText ]}>London</Text>
                 <Text style={[countryName, cityText]}>Uk</Text>
-                <View>
+                <View style={population}>
                     <Feather name={'user'} size={50} color={'red'} />
-                    <Text style={population}>Population</Text>
                     <Text style={populationText}>8,000</Text>
                 </View>
                 <View style={sunStatus}>
-                    <Feather name={'sunrise'} size={50} color={'white'} />
+                    <Feather name={'sunrise'} size={50} color={'black'} />
                     <Text style={sunrise}> 10:46:58am</Text>
-                    <Feather name={'sunset'} size={50} color={'white'} />
+                    <Feather name={'sunset'} size={50} color={'black'} />
                     <Text style={sunrise}> 17:28:15am</Text>            
                 </View>
 
@@ -66,7 +65,7 @@ const styles = StyleSheet.create ({
     },
     sunrise: {
         fontSize: 20,
-        color: 'white',
+        color: 'black',
         fontWeight: 'bold'
     }
 })
