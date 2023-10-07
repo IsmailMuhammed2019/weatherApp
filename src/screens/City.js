@@ -1,22 +1,19 @@
 import React from 'react'
 import {View, Text, SafeAreaView, StyleSheet, ImageBackground, StatusBar } from 'react-native'
-import { Feather } from '@expo/vector-icons';
+import IconText from '../components/IconText';
 const City = () => {
     const {sunStatus, sunrise, container, imageStyle, cityName, countryName, cityText, population, populationText} = styles
     return (
         <SafeAreaView style={container}>
             <ImageBackground source={require('../../assets/city.jpg')} style={imageStyle}>
-                <Text style={[cityName, cityText ]}>London</Text>
+                <Text style={[cityName, cityText ]}>Germany</Text>
                 <Text style={[countryName, cityText]}>Uk</Text>
                 <View style={population}>
-                    <Feather name={'user'} size={50} color={'red'} />
-                    <Text style={populationText}>8,000</Text>
+                    <IconText iconName={'user'} iconColor={'red'} bodyText={'8,000'}/>
                 </View>
                 <View style={sunStatus}>
-                    <Feather name={'sunrise'} size={50} color={'black'} />
-                    <Text style={sunrise}> 10:46:58am</Text>
-                    <Feather name={'sunset'} size={50} color={'black'} />
-                    <Text style={sunrise}> 17:28:15am</Text>            
+                    <IconText iconName={'sunrise'} iconColor={'black'} bodyText={'10:46:58am'} bodyTextStyles={sunrise} />
+                    <IconText iconName={'sunset'} iconColor={'black'} bodyText={'17:28:15am'} bodyTextStyles={sunrise} />
                 </View>
 
             </ImageBackground>
