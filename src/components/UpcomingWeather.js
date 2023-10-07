@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, StyleSheet, SafeAreaView, FlatList} from "react-native"
+import { View, Text, StyleSheet, SafeAreaView, FlatList, StatusBar} from "react-native"
 import { Feather } from '@expo/vector-icons';
 
 const DATA = [
@@ -79,6 +79,7 @@ const UpcomingWeather = () => {
 const styles=StyleSheet.create({
     wrapper: {
         flex: 1,
+        marginTop: StatusBar.currentHeight || 0
     },
     container: {
         flex: 1,
