@@ -14,8 +14,8 @@ const App = () => {
         </View>
       </View>
       <View style={styles.bodyWrapper}>
-        <Text>Its sunny</Text>
-        <Text>It's perfect t-shirt weather</Text>
+        <Text style={styles.description}>Its sunny</Text>
+        <Text style={styles.message}>It's perfect t-shirt weather</Text>
       </View>
     </SafeAreaView>
   )
@@ -44,6 +44,16 @@ const styles = StyleSheet.create ({
   },
   highLowWrapper: {
     flexDirection: 'row'
+  },
+  bodyWrapper: {
+    justifyContent: 'flex-end',
+    alignItems: 'flex-start'
+  },
+  description: {
+    fontSize: 40
+  },
+  message: {
+fontSize: 30
   }
 })
 export default App;
