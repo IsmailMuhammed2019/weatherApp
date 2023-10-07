@@ -68,7 +68,7 @@ const UpcomingWeather = () => {
                 <Text>Upcoming Weather</Text>
                 <FlatList
                     data={DATA}
-                    renderItem={}
+                    renderItem={renderItem}
                 />
             </View>
         </SafeAreaView>
