@@ -45,7 +45,7 @@ const Item = (props) => {
     const {dt_txt, min, max, condition} = props
     return (
         <View>
-            <Feather size={50} color="yellow" name="sun" />
+            <Feather name={"sun"} size={50} color={"black"} />
             <Text>{dt_txt}</Text>
             <Text>{min}</Text>
             <Text>{max}</Text>
@@ -54,14 +54,14 @@ const Item = (props) => {
 }
 
 const UpcomingWeather = () => {
-    const renderItem = ({item}) => {
+    const renderItem = ({item}) => (
         <Item 
             condition={item.weather[0].main}
             dt_txt={item.dt_txt}
             min={item.main.temp_min}
             max={item.main.tem_max}
         />
-    }
+    )
     return(
         <SafeAreaView style={styles.wrapper}>
             <View style={styles.container}>
