@@ -26,6 +26,14 @@ const styles = StyleSheet.create ({
   temp: {
     color: 'black',
     fontSize: 48
+  },
+  feels: {
+    fontSize: 30,
+    color: 'black'
+  },
+  highLow: {
+    fontSize: 20,
+    color: 'black'
   }
 })
 export default App;
