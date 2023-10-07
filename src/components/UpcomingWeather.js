@@ -46,7 +46,7 @@ const Item = (props) => {
     return (
         <View style={styles.items}>
             <Feather name={"sun"} size={50} color={"black"} />
-            <Text>{dt_txt}</Text>
+            <Text style={styles.date}>{dt_txt}</Text>
             <Text style={styles.temp}>{min}</Text>
             <Text style={styles.temp}>{max}</Text>
         </View>
@@ -96,6 +96,10 @@ const styles=StyleSheet.create({
     temp: {
         color: "#e3e3e3",
         fontSize: 20
+    },
+    date: {
+        color: "black",
+        fontSize: 15
     }
 })
 export default UpcomingWeather
