@@ -8,8 +8,8 @@ const App = () => {
 
         <Text style={styles.temp}>6</Text>
         <Text style={styles.feels}>Feels like 5</Text>
-        <View style={styles.higLowWrapper}>
-          <Text style={styles.highLow}>High: 8 Low: 6</Text>
+        <View style={styles.highLowWrapper}>
+          <Text style={styles.highLow}>High: 8</Text>
           <Text style={styles.highLow}>Low: 6</Text>
         </View>
       </View>
@@ -37,6 +37,9 @@ const styles = StyleSheet.create ({
   highLow: {
     fontSize: 20,
     color: 'black'
+  },
+  highLowWrapper: {
+    flexDirection: 'row'
   }
 })
 export default App;
