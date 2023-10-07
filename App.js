@@ -7,8 +7,8 @@ const App = () => {
       <View style={styles.container}>
 
         <Text style={styles.temp}>6</Text>
-        <Text>Feels like 5</Text>
-        <Text>High: 8 Low: 6</Text>
+        <Text style={styles.feels}>Feels like 5</Text>
+        <Text style={styles.highLow}>High: 8 Low: 6</Text>
       </View>
     </SafeAreaView>
   )
