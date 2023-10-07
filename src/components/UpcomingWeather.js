@@ -83,6 +83,15 @@ const styles=StyleSheet.create({
     },
     container: {
         flex: 1,
+    },
+    items: {
+        padding: 20,
+        marginVertical: 8,
+        marginHorizontal: 16,
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        borderWidth: 5,
+        backgroundColor: 'grey'
     }
 })
 export default UpcomingWeather
