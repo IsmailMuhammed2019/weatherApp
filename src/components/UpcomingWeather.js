@@ -44,7 +44,7 @@ const DATA = [
 const Item = (props) => {
     const {dt_txt, min, max, condition} = props
     return (
-        <View>
+        <View style={styles.items}>
             <Feather name={"sun"} size={50} color={"black"} />
             <Text>{dt_txt}</Text>
             <Text>{min}</Text>
