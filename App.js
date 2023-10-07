@@ -4,8 +4,8 @@ import {View, Text, SafeAreaView} from "react-native"
 const App = () => {
   return(
     <SafeAreaView>
-      <View>
-        <Text>This is my test weather app</Text>
+      <View style={{backgroundColor: 'orange'}}>
+        <Text style={{color: "#fff", margin: 20}}>This is my test weather app</Text>
       </View>
     </SafeAreaView>
   )
