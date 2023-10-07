@@ -40,13 +40,25 @@ const DATA = [
     }
 ]
 
+const Item = (props) => {
+    const {dt_txt, min, max, condition} = props
+    return (
+        <View>
+            <Text>{dt_txt}</Text>
+            <Text>{min}</Text>
+            <Text>{max}</Text>
+        </View>
+    )
+}
+
 const UpcomingWeather = () => {
     return(
         <SafeAreaView style={styles.wrapper}>
             <View style={styles.container}>
-                <Text>The current upcoming weather</Text>
+                <Text>Upcoming Weather</Text>
                 <FlatList
-                data=render{}
+                    data={DATA}
+                    renderItem={}
                 />
             </View>
         </SafeAreaView>
