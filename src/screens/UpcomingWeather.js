@@ -50,9 +50,10 @@ const UpcomingWeather = () => {
             max={item.main.temp_max}
         />
     )
+    const { wrapper, image, } = styles
     return(
-        <SafeAreaView style={styles.wrapper}>
-            <ImageBackground source={require('../../assets/cloud.jpg')} style={styles.image}>
+        <SafeAreaView style={wrapper}>
+            <ImageBackground source={require('../../assets/cloud.jpg')} style={image}>
                     <Text>Upcoming Weather</Text>
                     <FlatList
                         data={DATA}
