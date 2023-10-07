@@ -24,7 +24,7 @@ const CurrentWeather = () => {
 
 const styles = StyleSheet.create ({
   wrapper: {
-    backgroundColor: "skyblue",
+    backgroundColor: "#e3e3e3",
     flex: '1'
   },
   container: {
