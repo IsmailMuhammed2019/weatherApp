@@ -85,16 +85,17 @@ const styles=StyleSheet.create({
         flex: 1,
     },
     items: {
-        padding: 20,
+        padding: 10,
         marginVertical: 8,
-        marginHorizontal: 16,
+        marginHorizontal: 8,
         flexDirection: 'row',
         justifyContent: 'space-around',
+        alignItems: "center",
         borderWidth: 2,
         backgroundColor: '#e3e3e3'
     },
     temp: {
-        color: "#e3e3e3",
+        color: "black",
         fontSize: 20
     },
     date: {
