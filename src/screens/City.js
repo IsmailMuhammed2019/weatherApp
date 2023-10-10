@@ -9,7 +9,7 @@ const City = () => {
                 <Text style={[cityName, cityText ]}>Germany</Text>
                 <Text style={[countryName, cityText]}>Uk</Text>
                 <View style={population}>
-                    <IconText iconName={'user'} iconColor={'red'} bodyText={'8,000'}/>
+                    <IconText iconName={'user'} iconColor={'red'} bodyText={'8,000'} bodyTextStyles={sunrise}/>
                 </View>
                 <View style={sunStatus}>
                     <IconText iconName={'sunrise'} iconColor={'black'} bodyText={'10:46:58am'} bodyTextStyles={sunrise} />
@@ -63,7 +63,8 @@ const styles = StyleSheet.create ({
     sunrise: {
         fontSize: 20,
         color: 'black',
-        fontWeight: 'bold'
+        alignItems: 'center',
+        justifyContent: 'space-around',
     }
 })
 
