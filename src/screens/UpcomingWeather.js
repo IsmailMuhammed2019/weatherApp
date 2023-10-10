@@ -54,7 +54,7 @@ const UpcomingWeather = () => {
     return(
         <SafeAreaView style={wrapper}>
             <ImageBackground source={require('../../assets/cloud.jpg')} style={image}>
-                    <Text>Upcoming Weather</Text>
+                    <Text>downcoimng Weather</Text>
                     <FlatList
                         data={DATA}
                         renderItem={renderItem}
