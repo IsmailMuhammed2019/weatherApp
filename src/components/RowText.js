@@ -1,9 +1,13 @@
-import React form 'react'
+import React from 'react'
 import {View, Text, StyleSheet} from 'react-native'
 
-const RowText = () => {
+const RowText = (props) => {
+    const {containerStyle, messageOneStyle, messageTwoStyle} = props
     return (
-
+        <View style={containerStyle}>
+            <Text style={messageOneStyle}>{messageOne}</Text>
+            <Text style={messageTwoStyle}>{messageTwo}</Text>
+      </View>
     )
 }
 
